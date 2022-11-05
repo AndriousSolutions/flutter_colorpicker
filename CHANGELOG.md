@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.1.0]
+
+- bool colorIndicator 
+- bool paletteSlider
+
 ## [1.0.3]
 
 - [#68](https://github.com/mchome/flutter_colorpicker/issues/68) Fix material color picker outline for white color.
