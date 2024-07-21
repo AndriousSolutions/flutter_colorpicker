@@ -19,14 +19,15 @@ class ColorPicker extends StatefulWidget {
     this.paletteType = PaletteType.hsvWithHue,
     this.enableAlpha = true,
     @Deprecated('Use empty list in [labelTypes] to disable label.')
-        this.showLabel = true,
+    this.showLabel = true,
     this.labelTypes = const [
       ColorLabelType.rgb,
       ColorLabelType.hsv,
       ColorLabelType.hsl
     ],
-    @Deprecated('Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
-        this.labelTextStyle,
+    @Deprecated(
+        'Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
+    this.labelTextStyle,
     this.colorIndicator = true,
     this.paletteSlider = true,
     this.displayThumbColor = false,
@@ -498,14 +499,16 @@ class SlidePicker extends StatefulWidget {
     this.enableAlpha = true,
     this.sliderSize = const Size(260, 40),
     this.showSliderText = true,
-    @Deprecated('Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
-        this.sliderTextStyle,
+    @Deprecated(
+        'Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
+    this.sliderTextStyle,
     this.showParams = true,
     @Deprecated('Use empty list in [labelTypes] to disable label.')
-        this.showLabel = true,
+    this.showLabel = true,
     this.labelTypes = const [],
-    @Deprecated('Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
-        this.labelTextStyle,
+    @Deprecated(
+        'Use Theme.of(context).textTheme.bodyText1 & 2 to alter text style.')
+    this.labelTextStyle,
     this.showIndicator = true,
     this.indicatorSize = const Size(280, 50),
     this.indicatorAlignmentBegin = const Alignment(-1.0, -3.0),
@@ -665,7 +668,7 @@ class _SlidePickerState extends State<SlidePicker> {
                   child: Text(
                     trackType.toString().split('.').last[0].toUpperCase(),
                     style: widget.sliderTextStyle ??
-                        Theme.of(context).textTheme.bodyText1,
+                        Theme.of(context).textTheme.bodyMedium,
                   ),
                 ),
               Expanded(child: colorPickerSlider(trackType)),
@@ -675,7 +678,7 @@ class _SlidePickerState extends State<SlidePicker> {
                   child: Text(
                     getColorParams(trackTypes.indexOf(trackType)),
                     style: widget.sliderTextStyle ??
-                        Theme.of(context).textTheme.bodyText2,
+                        Theme.of(context).textTheme.bodyLarge,
                     textAlign: TextAlign.right,
                   ),
                 ),

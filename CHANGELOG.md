@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.2.0]
+July 21, 2024
+- Upgraded to Flutter 3.22.3,
+
 ## [1.1.0]
 
 - bool colorIndicator 
